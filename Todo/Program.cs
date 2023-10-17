@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
 
-            string isOver = "4";
+            string over = "4";
             string task;
             string message = "";
             string menu = @"
@@ -22,7 +22,7 @@
             Console.WriteLine(menu);
             string opt = Console.ReadLine();
 
-            while (opt != isOver)
+            while (opt != over)
             {
                 switch (opt)
                 {
@@ -46,7 +46,6 @@
                         break;
                     case "4":
                         Console.WriteLine("Saindo do programa.");
-
                         break;
                     default:
                         Console.WriteLine("Opção inválida, selecione opção coerente a lista");
@@ -55,11 +54,10 @@
 
                 }
 
-                if (opt != isOver)
+                if (opt != over)
                 {
                     if(opt == "0" || opt == "1") Console.WriteLine(message);
-                    Console.WriteLine();
-                    Console.WriteLine("E agora, deseja fazer o quê?");
+                    Console.WriteLine('\n' + "E agora, deseja fazer o quê?");
                     opt = Console.ReadLine();
                 }
 

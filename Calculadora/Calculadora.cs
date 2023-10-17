@@ -8,33 +8,33 @@ namespace Calculadora
 {
     internal class Calculadora
     {
-        public float NumberOne { get; set; }
-        public float NumberTwo { get; set; }
+        private float _numberOne;
+        private float _numberTwo;
 
-        public Calculadora(float n1, float n2)
+        public void AdicionarNumeros(float n1, float n2)
         {
-            NumberOne = n1;
-            NumberTwo = n2;
+            _numberOne = n1;
+            _numberTwo = n2;
         }
 
         public float Somar()
         {
-            return NumberOne + NumberTwo;
+            return _numberOne + _numberTwo;
         }
 
         public float Diminuir()
         {
-            return NumberOne - NumberTwo;
+            return _numberOne - _numberTwo;
         }
 
         public float Multiplicar()
         {
-            return NumberOne * NumberTwo;
+            return _numberOne * _numberTwo;
         }
 
         public float Dividir()
         {
-            return NumberOne / NumberTwo;
+            return _numberOne / _numberTwo;
         }
     }
 }
